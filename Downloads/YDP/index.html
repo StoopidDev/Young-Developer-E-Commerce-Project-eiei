@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Young Developer E-Commerce | Browse Product</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Noto+Sans+Linear+B&display=swap" rel="stylesheet">
+  <script src="java/script.js" defer></script>
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">FS TAN<span>.</span>Com</div>
+
+    <div class="menu">
+      <a href="#">Collection</a>
+      <a href="#">New In</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+    </div>
+
+    <div class="icon">
+      <span>🤍</span>
+      <span>👤</span>
+      <span id="cart-icon">🛒</span>
+    </div>
+  </header>
+<!--ส่วน เด่น-->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Discover Items</h1>
+      <p>Find the latest trends and timeless pieces in our collection.</p>
+      <button>Shop Now</button>
+    </div>
+    <div class="hero-img">
+      <img src="https://www.horizonplant.com/wp-content/uploads/2017/05/placeholder-400x400.png" alt="Fashion model">
+    </div>
+  </section>
+
+  <section class="product">
+    <h2>Featured Product</h2>
+    <div class="filter-container">
+    <input type="text" id="search-input" placeholder="🔍 Search products...">
+    
+    <select id="category-filter">
+      <option value="all">All Categories</option>
+      <option value="men's clothing">Men's Clothing</option>
+      <option value="women's clothing">Women's Clothing</option>
+      <option value="jewelery">Jewelery</option>
+      <option value="electronics">Electronics</option>
+    </select>
+    
+    <select id="sort-filter">
+      <option value="default">Sort By</option>
+      <option value="price-asc">Price: Low to High</option>
+      <option value="price-desc">Price: High to Low</option>
+      <option value="name-asc">Name: A to Z</option>
+    </select>
+   </div>
+    <div id="product-container" class="product-container">
+      <!-- สินค้าจาก JS -->
+    </div>
+  </section>
+<!--Cart Popup-->
+  <div id="cart-popup" class="cart-popup">
+    <div class="cart-content">
+      <h2>🛒 My Cart (<span id="cart-count">0</span>)</h2>
+      <ul id="cart-items"></ul>
+      <p><b>Total:</b> $<span id="cart-total">0.00</span></p>
+      <div class="cart-buttons">
+        <button id="checkout-btn">Buy</button>
+        <button id="clear-cart">Clear Cart</button>
+        <button id="close-cart">Close</button>
+      </div>
+    </div>
+  </div>
+  <div id="overlay" class="overlay"></div>
+</body>
+</html>
