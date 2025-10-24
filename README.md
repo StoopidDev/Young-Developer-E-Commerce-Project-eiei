@@ -86,7 +86,8 @@ Throughout this project, I learned:
 ## 🎥 Demo Preview
 > Add your screenshots or link here  
 > Example:
-> ![Preview Screenshot](./assets/demo.png)
+> ![Preview Screenshot](<img width="1919" height="940" alt="ee" src="https://github.com/user-attachments/assets/3884e851-5ed7-473a-95c1-b8411036a74a" />
+)
 
 ---
 
